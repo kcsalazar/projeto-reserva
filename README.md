@@ -52,9 +52,12 @@ As regras do Copilot mudam com frequência: confiram a [documentação do GitHub
 ## Sobre o nosso sistema
 *Substituam o conteúdo acima por esta seção ao final do projeto, mantendo a tabela de entregáveis.*
 
-**Sistema:** <PREENCHER: nome e uma frase sobre o que faz>
+**Sistema:** UniReserva - Sistema criado para reservar laboratórios, auditórios e equipamentos da universidade.
 
-**Grupo e papéis:** <PREENCHER: integrantes, Product Owner, Scrum Master e arquiteto técnico>
+**Grupo e papéis:** Karoline Carvalho Salazar - 
+                    Eduardo Marcelo Plovas -
+                    Felipe Vieira da Rosa -
+                  
 
 **Como executar:**
 ```bash
