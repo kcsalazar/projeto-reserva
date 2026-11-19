@@ -5,7 +5,7 @@
 - **Karoline Carvalho Salazar (`@kcsalazar`):** 200 créditos (0% consumido do plano GitHub Copilot Student) — verificado em 19/11/2026.
 - **Fernando Miguel Lewitzki Stoppa (`@B1plos`):** 200 créditos (0% consumido do plano GitHub Copilot Student) — verificado em 19/11/2026.
 - **Eduardo Marcelo Plovas (`@EduardoMarceloPlovas`):** 200 créditos (0% consumido do plano GitHub Copilot Student) — verificado em 19/11/2026.
-- **Felipe Vieira da Rosa:** 200 créditos (0% consumido do plano GitHub Copilot Student) — verificado em 19/11/2026.
+- **Felipe Vieira da Rosa (`@FAVirConta2`):** 200 créditos (0% consumido do plano GitHub Copilot Student) — verificado em 19/11/2026.
 
 > **Nota da Entrega Parcial 01:** Conforme as regras da disciplina, toda a etapa de planejamento (`specs/requisitos.md`, `specs/backlog.md`, `docs/adr/`, `docs/arquitetura.md`, `docs/plano-de-teste.md`, `docs/convencao-versionamento.md` e configuração de `.github/copilot-instructions.md` e `.github/agents/`) foi elaborada pela equipe **sem acionar o modo agente do GitHub Copilot para geração de código**, preservando 100% dos créditos para as Sprints de implementação e para a mudança surpresa.
 
