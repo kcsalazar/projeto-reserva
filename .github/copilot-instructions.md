@@ -1,7 +1,8 @@
 # Instruções do Projeto para o GitHub Copilot — UniReserva
 
 **Sistema:** **UniReserva**
-**Resumo:** Sistema universitário em Node.js 22 (ESM) para cadastro de recursos acadêmicos (Laboratórios, Auditórios e Equipamentos) e agendamento de reservas com detecção de conflitos de horário e políticas de validação específicas por categoria via padrão de projeto **Strategy**.
+**Resumo:** Sistema universitário em Node.js 22 (ESM) para cadastro de recursos acadêmicos (Laboratórios, Auditórios e Equipamentos) e agendamento de reservas com detecção de conflitos de horário e políticas de 
+> Regra central: o agente propõe; o grupo decide, revisa e responde.validação específicas por categoria via padrão de projeto **Strategy**.
 
 ---
 
