@@ -1,5 +1,7 @@
 # Plano de teste — UniReserva
 
+> Estratégia de verificação e validação (V&V) do sistema UniReserva aplicando TDD e Integração Contínua.
+
 ## 1. O que será testado
 
 Serão testados todos os requisitos funcionais (`RF-01` a `RF-06`) e não funcionais (`RNF-01` a `RNF-04`) especificados em [`specs/requisitos.md`](../specs/requisitos.md), abrangendo:
