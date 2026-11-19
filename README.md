@@ -14,7 +14,7 @@
 - **Karoline Carvalho Salazar** ([@kcsalazar](https://github.com/kcsalazar)) — **Product Owner (PO)** e Desenvolvedora
 - **Fernando Miguel Lewitzki Stoppa** ([@B1plos](https://github.com/B1plos)) — **Arquiteto Técnico** e Desenvolvedor
 - **Eduardo Marcelo Plovas** ([@EduardoMarceloPlovas](https://github.com/EduardoMarceloPlovas)) — **Scrum Master** e Desenvolvedor
-- **Felipe Vieira da Rosa** *(GitHub a confirmar)* — **Engenheiro de Qualidade (QA)** e Desenvolvedor
+- **Felipe Vieira da Rosa** ([@FAVirConta2](https://github.com/FAVirConta2)) — **Engenheiro de Qualidade (QA)** e Desenvolvedor
 
 **Como executar:**
 ```bash
