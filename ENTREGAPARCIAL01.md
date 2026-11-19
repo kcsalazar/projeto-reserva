@@ -12,6 +12,7 @@ Este documento serve como **índice oficial da Entrega Parcial 01** do projeto *
 | **Fernando Miguel Lewitzki Stoppa** | [@B1plos](https://github.com/B1plos) | Arquiteto Técnico e Desenvolvedor |
 | **Eduardo Marcelo Plovas** | [@EduardoMarceloPlovas](https://github.com/EduardoMarceloPlovas) | Scrum Master e Desenvolvedor |
 | **Felipe Vieira da Rosa** | [@FAVirConta2](https://github.com/FAVirConta2) | Engenheiro de Qualidade (QA) e Desenvolvedor |
+| **Nickolas Rodrigues Cabral** | [@NickolasRC](https://github.com/NickolasRC) | DevOps / CI, Auditoria de IA e Desenvolvedor |
 
 ---
 
