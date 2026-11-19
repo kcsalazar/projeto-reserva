@@ -1,17 +1,24 @@
-# ADR-000: Modelo
+# ADR-000: Modelo de Registro de Decisão Arquitetural
 
-Copiem este arquivo para `ADR-001-<assunto>.md` a cada decisão importante e mantenham aqui o modelo. Campos: título, contexto, decisão, status e consequências (Pressman; Maxim, 2021, PDF p. 393).
+> Este arquivo é o modelo de referência para a criação de novos ADRs no diretório `docs/adr/` (ex.: `ADR-001-arquitetura-nodejs.md` e `ADR-002-padrao-strategy-validacao-reservas.md`).
 
-**Status:** proposto, aceito ou rejeitado
+- **Status:** Modelo (Referência)
+- **Data:** 06/11/2026
 
 ## Contexto
-Pressupostos, restrições e os RNFs ligados a esta decisão.
+
+Descreve as forças em jogo (técnicas, de projeto, de equipe) e por que a decisão é necessária no sistema UniReserva.
 
 ## Decisão
-O que foi escolhido e por quê. Se a decisão criar uma regra para o agente, escrevam-na aqui e copiem-na para `.github/copilot-instructions.md`.
+
+Declara a escolha feita em uma frase direta. Se esta decisão criar uma regra para o agente de IA, a regra correspondente deve ser adicionada também em `.github/copilot-instructions.md`.
 
 ## Consequências
-Inclua o que melhora e o que piora. Para um estilo de arquitetura, cite ao menos uma desvantagem. Para um padrão de projeto, descreva o problema, a solução e as consequências. Padrões apresentados nos seminários: Builder, Factory Method, Prototype, Singleton, Adapter, Composite, Decorator, Facade, Proxy, Chain of Responsibility, Command, Iterator, Observer, State, Strategy e Template Method.
+
+- **Positivas:** Benefícios diretos de testabilidade, simplicidade ou manutenção.
+- **Negativas / trade-offs:** Limitações aceitas conscientemente pela equipe.
 
 ## Alternativas descartadas
-O que foi considerado e por que não foi escolhido.
+
+- **Alternativa A:** Motivo pelo qual não foi adotada.
+- **Alternativa B:** Motivo pelo qual não foi adotada.
