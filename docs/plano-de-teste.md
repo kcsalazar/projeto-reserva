@@ -52,3 +52,15 @@ A fase de testes de cada história e da entrega final só é considerada encerra
 2. `100%` dos testes automatizados (`npm test`) passarem sem falhas ou testes ignorados (`skip`).
 3. A análise estática (`npm run lint`) retornar `0` erros e `0` avisos.
 4. O workflow de CI no GitHub Actions estiver aprovado (verde) na branch principal (`main`) e na branch de entrega.
+
+ ## 7. Critérios de aceitação das histórias prioritárias
+
+| História | Requisito | Critério de aceitação | Automatizável? |
+| --- | --- | --- | --- |
+| US-01 | RF-01 | Ao cadastrar um laboratório válido com código inédito, ele deve aparecer na listagem de recursos. | Sim |
+| US-01 | RF-01 | Se já existe um recurso com o código `LAB-01`, uma nova tentativa com esse código deve ser rejeitada com a mensagem `Recurso com este código já existe`. | Sim |
+| US-02 | RF-03 | Um pedido válido para um recurso ativo e livre no intervalo solicitado deve criar uma reserva com status `CONFIRMADA`. | Sim |
+| US-02 | RF-03 | Se o `LAB-01` já tem uma reserva confirmada das 08h às 10h, um pedido para o mesmo laboratório das 09h às 11h deve ser recusado por conflito de horário. | Sim |
+| US-02 | RNF-01 | Com 1.000 reservas cadastradas em memória, a verificação de conflito e a criação de uma nova reserva devem levar menos de 50 ms no total. | Sim |
+| US-04 | RF-04 | Um pedido válido nos demais aspectos para usar um laboratório por 5 horas deve ser recusado porque ultrapassa o limite de 4 horas. | Sim |
+| US-04 | RF-04 | Um pedido válido nos demais aspectos para usar um auditório com apenas 6 horas de antecedência deve ser recusado porque a antecedência mínima é de 24 horas. | Sim |
