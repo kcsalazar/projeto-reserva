@@ -1,69 +1,55 @@
-# Projeto do 2º bimestre: Engenharia de Software
+# Projeto do 2º bimestre: Engenharia de Software — UniReserva
 
-> **Regra do projeto:** o agente propõe; o grupo decide e responde.
->
-> Agentes são a ferramenta do processo, não o produto. Vocês constroem um sistema pequeno e são avaliados principalmente por como aplicam engenharia de software e controlam os agentes.
+> **Índice da Entrega Parcial 01:** Consulte o arquivo [`ENTREGAPARCIAL01.md`](./ENTREGAPARCIAL01.md) para o sumário completo e links diretos de todos os entregáveis de planejamento.
 
-**Grupos:** 4 a 5 pessoas. **Tema:** livre.
-
-**Entrega e prova:** 04/12/2026. A entrega é este repositório: enviem o link no Classroom.
-
-**Prova individual (AE):** sem IA, vocês vão auditar um pull request feito sobre uma cópia do código do grupo, tirada em 03/12 às 12h00 (horário de Brasília), com defeitos plantados. O que estiver na `main` nesse horário é o que entra na prova. Quem acompanha o código do grupo chega preparado.
-
-## Comece aqui
-1. Criem o repositório do grupo com **Use this template** e deem acesso a todo o grupo e ao professor.
-2. Cada integrante ativa o **Copilot Student** com o e-mail da UEPG (extrato de matrícula, se solicitado) e localiza o **painel de uso** de créditos.
-3. Escrevam, **sem usar o agente**: `specs/requisitos.md`, `specs/backlog.md` e o primeiro ADR em `docs/adr/`.
-4. Escolham **Node.js ou Java** e ativem o CI: sigam `.github/exemplos-ci/LEIA-ME.md`.
-5. Escrevam `docs/plano-de-teste.md`, `docs/convencao-versionamento.md`, `.github/copilot-instructions.md` e os agentes em `.github/agents/`.
-6. Só então peçam a primeira história ao agente, em uma branch própria e com o teste escrito antes.
-
-Procure por `<PREENCHER` para achar o que falta. Nenhum desses marcadores deve sobrar na entrega.
-
-## Entregáveis
-| # | Entregável | Onde |
-|---|---|---|
-| 1 | Repositório com histórico, branches e pull requests com revisão humana | Git e `docs/convencao-versionamento.md` |
-| 2 | Spec com RF e RNF, critérios de aceitação e backlog priorizado | `specs/` |
-| 3 | ADRs e diagrama de arquitetura | `docs/adr/`, `docs/arquitetura.md` |
-| 4 | Pelo menos um padrão de projeto aplicado e justificado | Um ADR e o código |
-| 5 | Plano de teste, testes automatizados e lint no CI | `docs/plano-de-teste.md`, testes, `.github/workflows/` |
-| 6 | Configuração dos agentes: instruções e 2 agentes | `.github/copilot-instructions.md`, `.github/agents/` |
-| 7 | Registro de uso de IA | `docs/registro-ia.md` |
-| 8 | Relatório de smells com ao menos uma refatoração de código gerado | `docs/relatorio-smells.md` |
-| 9 | README com execução e definição de pronto | Este arquivo |
-
-## Fluxo de cada história
-Critérios e teste (pessoas) → teste falhando → agente implementador → verificação local → pull request → agente revisor → revisão humana → merge.
-
-## O que é do grupo
-Requisitos, arquitetura, critérios de aceitação e o código integrado são responsabilidade do grupo. O agente pode sugerir, mas qualquer integrante precisa saber explicar qualquer decisão.
-
-## Créditos do Copilot
-- A cota é individual e mensal, não acumula e volta no dia 1º.
-- Chat, CLI e cloud agent consomem créditos; as sugestões de código no editor, não.
-- Conversas curtas, uma tarefa por vez, com a spec já escrita. Anote o saldo no registro de IA.
-- Reservem créditos para o final do projeto. Não é preciso comprar créditos.
-
-As regras do Copilot mudam com frequência: confiram a [documentação do GitHub](https://docs.github.com/en/copilot).
+**Regra do projeto:** *o agente propõe; o grupo decide e responde.* Agentes são a ferramenta do processo, não o produto.
 
 ---
 
 ## Sobre o nosso sistema
-*Substituam o conteúdo acima por esta seção ao final do projeto, mantendo a tabela de entregáveis.*
 
-**Sistema:** UniReserva - Sistema criado para reservar laboratórios, auditórios e equipamentos da universidade.
+**Sistema:** **UniReserva** — Sistema para gestão e agendamento de laboratórios, auditórios e equipamentos da universidade (UEPG), com detecção automática de conflitos de horário, validação de regras específicas por categoria de recurso (via padrão de projeto *Strategy*) e histórico auditável de reservas.
 
-**Grupo e papéis:** Karoline Carvalho Salazar - 
-                    Eduardo Marcelo Plovas -
-                    Felipe Vieira da Rosa -
-                  
+**Grupo e papéis:**
+- **Karoline Carvalho Salazar** ([@kcsalazar](https://github.com/kcsalazar)) — **Product Owner (PO)** e Desenvolvedora
+- **Fernando Miguel Lewitzki Stoppa** ([@B1plos](https://github.com/B1plos)) — **Arquiteto Técnico** e Desenvolvedor
+- **Eduardo Marcelo Plovas** ([@EduardoMarceloPlovas](https://github.com/EduardoMarceloPlovas)) — **Scrum Master** e Desenvolvedor
+- **Felipe Vieira da Rosa** *(GitHub a confirmar)* — **Engenheiro de Qualidade (QA)** e Desenvolvedor
 
 **Como executar:**
 ```bash
-<PREENCHER: comandos para instalar, testar e executar>
+# 1. Instalar as dependências (requer Node.js v22+)
+npm ci
+
+# 2. Executar a análise estática de código (ESLint)
+npm run lint
+
+# 3. Executar a suíte de testes automatizados (Unidade e Aceitação)
+npm test
 ```
 
-### Definição de pronto
-Uma história está pronta quando:
-- [ ] <PREENCHER: de 5 a 7 itens verificáveis definidos pelo grupo>
+**Definição de pronto (Definition of Done - DoD):**
+1. A história de usuário está vinculada a pelo menos um requisito funcional (`RF`) ou não funcional (`RNF`) na matriz de rastreabilidade em `specs/requisitos.md`.
+2. Os testes automatizados (unidade e aceitação, cobrindo caminho feliz e exceções) foram escritos antes da implementação (TDD) e passam integralmente via `npm test`.
+3. O código segue a arquitetura em camadas (`domain`, `strategies`, `repositories`, `services`) definida em `docs/arquitetura.md` e nos ADRs em `docs/adr/`.
+4. A verificação estática com ESLint (`npm run lint`) executa com zero erros e zero avisos.
+5. O pipeline de Integração Contínua (`.github/workflows/ci.yml`) no GitHub Actions está verde na branch do Pull Request.
+6. Caso o agente GitHub Copilot tenha sido utilizado na tarefa, a sessão, a decisão humana (aceito/ajustado/rejeitado) e o consumo de créditos foram registrados em `docs/registro-ia.md`.
+7. O Pull Request foi aberto em branch dedicada, preencheu o checklist de `.github/pull_request_template.md` e recebeu revisão e aprovação humana de pelo menos um integrante do grupo diferente do autor.
+
+---
+
+## Entregáveis
+
+| # | Entregável | Onde fica |
+|---|---|---|
+| 0 | Índice da Entrega Parcial 01 | [`ENTREGAPARCIAL01.md`](./ENTREGAPARCIAL01.md) |
+| 1 | Repositório com histórico, branches e PRs de revisão humana | Git e [`docs/convencao-versionamento.md`](./docs/convencao-versionamento.md) |
+| 2 | Spec com RF, RNF, critérios de aceitação e backlog priorizado | [`specs/requisitos.md`](./specs/requisitos.md) e [`specs/backlog.md`](./specs/backlog.md) |
+| 3 | ADR(s) e diagrama de arquitetura | [`docs/adr/`](./docs/adr/) e [`docs/arquitetura.md`](./docs/arquitetura.md) |
+| 4 | Ao menos um padrão de projeto aplicado e justificado (*Strategy*) | [`docs/adr/ADR-002-padrao-strategy-validacao-reservas.md`](./docs/adr/ADR-002-padrao-strategy-validacao-reservas.md) |
+| 5 | Plano de teste, testes automatizados e lint no CI | [`docs/plano-de-teste.md`](./docs/plano-de-teste.md), `test/` e [`.github/workflows/ci.yml`](./.github/workflows/ci.yml) |
+| 6 | Configuração dos agentes: instruções e ao menos 2 agentes | [`.github/copilot-instructions.md`](./.github/copilot-instructions.md) e [`.github/agents/`](./.github/agents/) |
+| 7 | Registro de uso de IA | [`docs/registro-ia.md`](./docs/registro-ia.md) |
+| 8 | Relatório de smells com ao menos uma refatoração de código da IA | [`docs/relatorio-smells.md`](./docs/relatorio-smells.md) |
+| 9 | `README.md` com comandos de execução e definição de pronto | Este arquivo (`README.md`) |
