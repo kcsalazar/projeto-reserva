@@ -1,5 +1,7 @@
 # Backlog — UniReserva
 
+> Backlog priorizado pelo Product Owner com base no valor de negócio e dependências arquiteturais.
+
 | Ordem | Id | Tipo | Item | Requisitos | Sprint |
 |---|---|---|---|---|---|
 | 1 | T-01 | Tarefa Técnica | Configurar estrutura base do projeto Node.js 22, ESLint 9 e workflow de CI no GitHub Actions | RNF-02, RNF-03 | Sprint 1 |
