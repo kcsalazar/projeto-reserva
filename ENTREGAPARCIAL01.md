@@ -44,3 +44,5 @@ O **UniReserva** é um sistema para agendamento e controle de reservas de espaç
 * **Linguagem e Runtime:** Node.js v22+ (JavaScript ESM), com executor de testes nativo (`node --test`) e análise estática via ESLint v9.
 * **Padrão de Projeto Aplicado:** **Strategy** ([`ADR-002`](./docs/adr/ADR-002-padrao-strategy-validacao-reservas.md)), responsável por isolar as regras de negócio e limites de reserva específicos de cada categoria de recurso (`LaboratorioReservaStrategy`, `AuditorioReservaStrategy` e `EquipamentoReservaStrategy`).
 * **Uso de Agentes nesta Etapa:** Em conformidade com as regras da disciplina, todo o planejamento, especificação (`specs/`), decisões arquiteturais (`docs/adr/`), plano de testes e instruções de agentes (`.github/`) foram redigidos e revisados pela equipe, **sem consumo de créditos de codificação do GitHub Copilot**.
+
+*Revisado pela equipe UniReserva para a Entrega Parcial 01.*
