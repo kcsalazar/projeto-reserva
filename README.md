@@ -53,3 +53,5 @@ npm test
 | 7 | Registro de uso de IA | [`docs/registro-ia.md`](./docs/registro-ia.md) |
 | 8 | Relatório de smells com ao menos uma refatoração de código da IA | [`docs/relatorio-smells.md`](./docs/relatorio-smells.md) |
 | 9 | `README.md` com comandos de execução e definição de pronto | Este arquivo (`README.md`) |
+
+*Documentação revisada pela equipe UniReserva para a Entrega Parcial 01.*
