@@ -22,6 +22,7 @@ Este documento serve como **índice oficial da Entrega Parcial 01** do projeto *
 | :-: | :--- | :--- | :-: |
 | **1** | **Visão Geral, Equipe, Execução e Definição de Pronto (DoD)** | [`README.md`](./README.md) | ✅ Concluído |
 | **2** | **Especificação de Requisitos (RF, RNF mensuráveis, Critérios de Aceitação e Rastreabilidade)** | [`specs/requisitos.md`](./specs/requisitos.md) | ✅ Concluído |
+| **E4** | **Mini-spec — Fazer reserva de recurso** | [`specs/mini-spec.md`](./specs/mini-spec.md) | ✅ Concluído |
 | **3** | **Backlog do Produto Priorizado (Histórias de Usuário e Sprints)** | [`specs/backlog.md`](./specs/backlog.md) | ✅ Concluído |
 | **4** | **Arquitetura do Sistema e Diagrama de Componentes (Mermaid)** | [`docs/arquitetura.md`](./docs/arquitetura.md) | ✅ Concluído |
 | **5** | **ADR-001: Adoção de Node.js 22 e Arquitetura em Camadas** | [`docs/adr/ADR-001-arquitetura-nodejs.md`](./docs/adr/ADR-001-arquitetura-nodejs.md) | ✅ Concluído |
